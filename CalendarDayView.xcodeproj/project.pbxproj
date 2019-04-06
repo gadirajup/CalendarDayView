@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		A481FD082258502300976520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481FD072258502300976520 /* AppDelegate.swift */; };
 		A481FD0A2258502300976520 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481FD092258502300976520 /* ViewController.swift */; };
-		A481FD0D2258502300976520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A481FD0B2258502300976520 /* Main.storyboard */; };
 		A481FD0F2258502400976520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A481FD0E2258502400976520 /* Assets.xcassets */; };
-		A481FD122258502400976520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A481FD102258502400976520 /* LaunchScreen.storyboard */; };
+		A481FD1A2258603800976520 /* UIDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481FD192258603800976520 /* UIDate.swift */; };
+		A481FD1C2258642500976520 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481FD1B2258642500976520 /* Item.swift */; };
+		A481FD1E22586B8300976520 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481FD1D22586B8200976520 /* CustomLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A481FD042258502300976520 /* CalendarDayView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarDayView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A481FD072258502300976520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A481FD092258502300976520 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A481FD0C2258502300976520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A481FD0E2258502400976520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A481FD112258502400976520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A481FD132258502400976520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A481FD192258603800976520 /* UIDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDate.swift; sourceTree = "<group>"; };
+		A481FD1B2258642500976520 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A481FD1D22586B8200976520 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 			children = (
 				A481FD072258502300976520 /* AppDelegate.swift */,
 				A481FD092258502300976520 /* ViewController.swift */,
-				A481FD0B2258502300976520 /* Main.storyboard */,
+				A481FD1D22586B8200976520 /* CustomLayout.swift */,
+				A481FD1B2258642500976520 /* Item.swift */,
+				A481FD192258603800976520 /* UIDate.swift */,
 				A481FD0E2258502400976520 /* Assets.xcassets */,
-				A481FD102258502400976520 /* LaunchScreen.storyboard */,
 				A481FD132258502400976520 /* Info.plist */,
 			);
 			path = CalendarDayView;
@@ -122,9 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A481FD122258502400976520 /* LaunchScreen.storyboard in Resources */,
 				A481FD0F2258502400976520 /* Assets.xcassets in Resources */,
-				A481FD0D2258502300976520 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +136,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A481FD1C2258642500976520 /* Item.swift in Sources */,
+				A481FD1E22586B8300976520 /* CustomLayout.swift in Sources */,
 				A481FD0A2258502300976520 /* ViewController.swift in Sources */,
+				A481FD1A2258603800976520 /* UIDate.swift in Sources */,
 				A481FD082258502300976520 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A481FD0B2258502300976520 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A481FD0C2258502300976520 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A481FD102258502400976520 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A481FD112258502400976520 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A481FD142258502400976520 /* Debug */ = {
@@ -285,6 +270,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4479HNAQMJ;
 				INFOPLIST_FILE = CalendarDayView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4479HNAQMJ;
 				INFOPLIST_FILE = CalendarDayView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
